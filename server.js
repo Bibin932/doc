@@ -4,17 +4,26 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Middleware
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
 
+// Serve files from the project root
+app.use(express.static(__dirname));
+
+// Health check
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', service: 'CyberCodix Help Center' });
+  res.json({
+    status: 'ok',
+    service: 'CyberCodix Help Center'
+  });
 });
 
+// Serve index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`CyberCodix Help Center running at http://localhost:${PORT}`);
+// Start server
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`CyberCodix Help Center running on port ${PORT}`);
 });
