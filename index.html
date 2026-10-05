@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CyberCodix CRM Help Center — guides for WhatsApp API, CRM, Meta Ads, automation, AI, campaigns and integrations.">
+  <title>CyberCodix Help Center</title>
+  <link rel="icon" href="/cybercodix-logo.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="CyberCodix Help Center">
+        <img src="/cybercodix-logo.png" alt="CyberCodix">
+        <span class="brand-divider"></span>
+        <span class="brand-title">Help Center</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#categories">Documentation</a>
+        <a href="#academy">Academy</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#categories">Documentation</a>
+      <a href="#academy">Academy</a>
+      <a href="#faq">FAQ</a>
+      <a href="#support">Contact Support</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">CYBERCODIX CRM • HELP CENTER</div>
+        <h1>How can we help you?</h1>
+        <p>Learn how to connect WhatsApp, manage leads, automate follow-ups, run campaigns and grow your business with CyberCodix CRM.</p>
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search guides, features, integrations..." autocomplete="off">
+          <kbd>⌘ K</kbd>
+        </div>
+        <div class="quick-links">
+          <a href="#category-whatsapp">WhatsApp API</a>
+          <a href="#category-crm">CRM & Leads</a>
+          <a href="#category-automation">Automation</a>
+          <a href="#category-api">Developer API</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-shell">
+      <div class="announcement">
+        <div class="announcement-icon">✦</div>
+        <div>
+          <strong>New to CyberCodix?</strong>
+          <span>Start with the setup guide and connect your first WhatsApp number.</span>
+        </div>
+        <button data-article="getting-started">Start setup →</button>
+      </div>
+
+      <section id="searchResults" class="search-results hidden">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">SEARCH</span>
+            <h2>Search results</h2>
+          </div>
+          <button class="clear-search" id="clearSearch">Clear</button>
+        </div>
+        <div id="resultsGrid" class="results-grid"></div>
+      </section>
+
+      <section id="categories" class="section">
+        <div class="section-heading centered">
+          <span class="section-kicker">DOCUMENTATION</span>
+          <h2>Explore CyberCodix</h2>
+          <p>Everything you need to set up, operate and scale your customer communication.</p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card" id="category-getting-started" data-category="Getting Started">
+            <div class="category-icon orange">🚀</div>
+            <h3>Getting Started</h3>
+            <p>Set up your workspace, business profile, team and first workflow.</p>
+            <span>6 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-whatsapp" data-category="WhatsApp API">
+            <div class="category-icon green">◉</div>
+            <h3>WhatsApp API</h3>
+            <p>Connect Meta, WABA, phone numbers, templates and business messaging.</p>
+            <span>12 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-inbox" data-category="Team Inbox">
+            <div class="category-icon blue">💬</div>
+            <h3>Team Inbox</h3>
+            <p>Handle customer conversations, assignments, notes, tags and replies.</p>
+            <span>10 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-crm" data-category="CRM & Leads">
+            <div class="category-icon purple">👥</div>
+            <h3>CRM & Leads</h3>
+            <p>Capture, qualify, assign and convert leads using a flexible sales pipeline.</p>
+            <span>11 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-campaigns" data-category="Campaigns">
+            <div class="category-icon pink">📣</div>
+            <h3>Campaigns & Broadcasts</h3>
+            <p>Create targeted WhatsApp campaigns, schedule sends and measure results.</p>
+            <span>9 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-templates" data-category="Templates">
+            <div class="category-icon teal">▣</div>
+            <h3>WhatsApp Templates</h3>
+            <p>Create, submit and troubleshoot marketing, utility and authentication templates.</p>
+            <span>8 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-automation" data-category="Automation">
+            <div class="category-icon amber">⚡</div>
+            <h3>Automation</h3>
+            <p>Build lead routing, follow-up, reminders and event-based workflows.</p>
+            <span>12 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-ai" data-category="AI & Chatbots">
+            <div class="category-icon indigo">✧</div>
+            <h3>AI & Chatbots</h3>
+            <p>Use AI for replies, qualification, summaries, bots and knowledge-based support.</p>
+            <span>9 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-meta" data-category="Meta Ads">
+            <div class="category-icon slate">◈</div>
+            <h3>Meta Ads & Lead Forms</h3>
+            <p>Connect Facebook and Instagram leads to CyberCodix and automate responses.</p>
+            <span>8 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-integrations" data-category="Integrations">
+            <div class="category-icon cyan">🔗</div>
+            <h3>Integrations</h3>
+            <p>Connect websites, e-commerce, CRMs, spreadsheets and external services.</p>
+            <span>10 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-analytics" data-category="Analytics">
+            <div class="category-icon red">▥</div>
+            <h3>Analytics & Reports</h3>
+            <p>Measure messages, leads, agent performance, campaigns and conversions.</p>
+            <span>7 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-api" data-category="Developer API">
+            <div class="category-icon dark">⌘</div>
+            <h3>Developer API</h3>
+            <p>Build integrations with API keys, messaging endpoints and webhooks.</p>
+            <span>14 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-team" data-category="Team & Permissions">
+            <div class="category-icon gold">♙</div>
+            <h3>Team & Permissions</h3>
+            <p>Manage agents, roles, teams, access controls and activity logs.</p>
+            <span>7 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-security" data-category="Security">
+            <div class="category-icon navy">✓</div>
+            <h3>Security & Privacy</h3>
+            <p>Protect accounts, manage permissions and understand data controls.</p>
+            <span>7 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-billing" data-category="Billing">
+            <div class="category-icon green2">₹</div>
+            <h3>Billing & Plans</h3>
+            <p>Understand subscriptions, usage, invoices and WhatsApp messaging charges.</p>
+            <span>6 guides →</span>
+          </article>
+
+          <article class="category-card" id="category-troubleshooting" data-category="Troubleshooting">
+            <div class="category-icon orange2">⚙</div>
+            <h3>Troubleshooting</h3>
+            <p>Solutions for common Meta, WhatsApp, template, API and campaign issues.</p>
+            <span>15 guides →</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="popular section">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">POPULAR</span>
+            <h2>Most popular guides</h2>
+          </div>
+        </div>
+        <div class="article-list">
+          <button class="article-row" data-article="getting-started">
+            <span class="article-badge">01</span><span><strong>Set up your CyberCodix workspace</strong><small>Create your account, business profile and first team.</small></span><span>→</span>
+          </button>
+          <button class="article-row" data-article="whatsapp-connect">
+            <span class="article-badge">02</span><span><strong>Connect WhatsApp Business API</strong><small>Connect Meta Business, WABA and your business number.</small></span><span>→</span>
+          </button>
+          <button class="article-row" data-article="meta-leads">
+            <span class="article-badge">03</span><span><strong>Send Meta Lead Ads into CyberCodix</strong><small>Capture Facebook and Instagram leads automatically.</small></span><span>→</span>
+          </button>
+          <button class="article-row" data-article="automation-flow">
+            <span class="article-badge">04</span><span><strong>Create your first automation</strong><small>Build a lead-to-WhatsApp workflow without coding.</small></span><span>→</span>
+          </button>
+          <button class="article-row" data-article="template-create">
+            <span class="article-badge">05</span><span><strong>Create a WhatsApp message template</strong><small>Prepare templates and understand approval requirements.</small></span><span>→</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="academy" class="academy section">
+        <div class="academy-copy">
+          <span class="section-kicker">CYBERCODIX ACADEMY</span>
+          <h2>Learn. Automate. Grow.</h2>
+          <p>Structured lessons for business owners, sales teams, marketers and developers.</p>
+          <div class="course-pills">
+            <span>WhatsApp API</span><span>CRM</span><span>Marketing</span><span>Automation</span><span>AI</span><span>Developer API</span>
+          </div>
+          <button class="primary-btn" data-article="academy">Explore Academy →</button>
+        </div>
+        <div class="academy-visual">
+          <div class="floating-card card-one">▶ <b>06</b><small>Learning paths</small></div>
+          <div class="floating-card card-two">✓ <b>40+</b><small>Step-by-step lessons</small></div>
+          <div class="academy-circle">CC</div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section">
+        <div class="section-heading centered">
+          <span class="section-kicker">FAQ</span>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-grid">
+          <details><summary>What is CyberCodix CRM?</summary><p>CyberCodix CRM is a customer communication platform combining WhatsApp Business API, lead management, team inbox, campaigns, automation, AI and integrations.</p></details>
+          <details><summary>Can multiple agents use one WhatsApp number?</summary><p>Yes. CyberCodix is designed around a shared team inbox so authorized agents can manage conversations from one workspace.</p></details>
+          <details><summary>Can I connect Meta Lead Ads?</summary><p>Yes. Connect eligible Facebook and Instagram lead sources and route new leads into your CRM and automated WhatsApp workflows.</p></details>
+          <details><summary>Can CyberCodix automate follow-ups?</summary><p>Yes. Build workflows using triggers, conditions, delays, messages, assignments and notifications.</p></details>
+          <details><summary>Does CyberCodix support templates?</summary><p>Yes. Use approved WhatsApp templates for business-initiated messaging outside the customer-service window.</p></details>
+          <details><summary>Can developers use an API?</summary><p>Yes. CyberCodix can expose API and webhook functionality for custom applications and integrations.</p></details>
+        </div>
+      </section>
+
+      <section id="support" class="support">
+        <div>
+          <span class="section-kicker">NEED MORE HELP?</span>
+          <h2>Our support team is here for you.</h2>
+          <p>Can't find the answer? Contact CyberCodix support and tell us what you're trying to build.</p>
+        </div>
+        <a class="support-btn" href="mailto:support@cybercodix.com">Contact Support →</a>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <img src="/cybercodix-logo.png" alt="CyberCodix">
+        <p>WhatsApp API • CRM • Automation • AI</p>
+      </div>
+      <div class="footer-links">
+        <a href="#categories">Documentation</a>
+        <a href="#academy">Academy</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:support@cybercodix.com">Support</a>
+      </div>
+      <div class="copyright">© <span id="year"></span> CyberCodix. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="article-modal hidden" id="articleModal" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <article class="modal-card">
+      <button class="close-modal" id="closeModal" aria-label="Close">×</button>
+      <span class="section-kicker" id="modalKicker">GUIDE</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalIntro"></p>
+      <div id="modalBody"></div>
+      <div class="modal-footer">
+        <span>CyberCodix Help Center</span>
+        <button class="primary-btn" id="modalCloseBtn">Done</button>
+      </div>
+    </article>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
